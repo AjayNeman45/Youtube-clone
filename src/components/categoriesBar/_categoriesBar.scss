@@ -1,0 +1,33 @@
+@import '../../base';
+
+.categoriesBar{
+    padding:0.5rem 0;
+    font-size: 0.8rem;
+    display: flex;
+    overflow-x: scroll;
+    cursor: pointer;
+    
+    &::-webkit-scrollBar{
+        width:0;
+    }
+    scrollbar-width: none;
+    
+    span{
+        margin-right:1rem;
+        padding:0.5rem;
+        white-space: nowrap;
+        border:1.5px solid $text-color;
+        border-radius: 999px;
+
+        &:hover{
+            background-color: #374959;
+        }
+        &.active{
+            color:black;
+            background-color: white;
+            border-color: $border-color;
+        }
+        
+    }
+   
+}

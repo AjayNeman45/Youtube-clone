@@ -1,0 +1,52 @@
+@import '../../base';
+
+.sidebar{
+    
+    background: $black-secondary;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    padding-top: 2rem;
+    transition: transform 0.2s ease-in;
+    position: sticky;
+    top: 10vh;
+    left: 0;
+    color:#b1bde4;
+    li{
+        display: flex;
+        align-items: center;
+        padding:1rem 2.5rem 1rem 1rem;
+        cursor: pointer;
+        span{
+            margin-left: 1rem;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.4px; 
+        }
+
+        &:hover{
+            background-color: $border-color;
+        }
+    }
+    &.open{
+        transform: translate(0);
+    }
+}
+@media (max-width:$breakpoint-medium){
+    .sidebar{
+        width:90px;
+        li{
+            justify-content: center;
+        span{
+            display: none;
+        }
+    }
+   }
+}
+@media (max-width:$breakpoint-small){
+    .sidebar{
+       transform: translate(-100%);
+       position: fixed;
+       z-index: 999;
+   }
+}
