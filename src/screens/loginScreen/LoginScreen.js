@@ -27,8 +27,8 @@ const LoginScreen = () =>
         <div className="login">
             <div className="login__container">
                 <img src="https://pngimg.com/uploads/youtube/youtube_PNG2.png" alt="" />
-                <div className="login_with_google">
-                    <button onClick={handleLogin}>Login with google</button>
+                <div className="login_with_google" onClick={handleLogin}>
+                    <button>Login with google</button>
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png"
                         alt="" />
                 </div>
