@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import {useSelector} from 'react-redux';
-import {useHistory} from 'react-router-dom';
+import { Redirect, Route, Switch, useHistory } from 'react-router-dom'
 
 import { Container } from 'react-bootstrap';
 import Header from "./components/header/Header";
@@ -13,7 +13,6 @@ import SubscriptionsScreen from './screens/subscriptionsScreen/SubscriptionsScre
 
 import './_app.scss'
 
-import { Route, Switch, Redirect } from 'react-router-dom';
 import ChannelScreen from './screens/channelScreen/ChannelScreen';
 
 
