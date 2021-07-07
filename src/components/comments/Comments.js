@@ -12,7 +12,7 @@ const Comments = ({ videoId , totalComments}) =>
     useEffect(() =>
     {
         dispatch(getCommentsOfVideoById(videoId,totalComments))
-    }, [dispatch, videoId])
+    }, [dispatch, videoId,totalComments])
   
     const comments = useSelector(state => state.commentList.comments)
     
